@@ -18,7 +18,7 @@ public class GlobalControllerExceptionHandler {
      */
     @ExceptionHandler(NullPointerException.class)
     public String handle(NullPointerException e) {
-        logger.error("##########" + e.getMessage() + "##########");
+        logger.error("###########" + e.getMessage() + "###########");
         return "index";
     }
 }
